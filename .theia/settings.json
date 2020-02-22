@@ -1,0 +1,13 @@
+{
+    "cpp.buildConfigurations": [
+        {
+            "name": "",
+            "directory": ""
+        },
+        {
+            "name": "",
+            "directory": ""
+        }
+    ],
+    "C_Cpp.autoAddFileAssociations": true
+}
