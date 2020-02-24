@@ -6,16 +6,15 @@ int main()
     setlocale (LC_ALL, "");
     setlocale (LC_CTYPE, "pt_BR.UTF-8");
 
-    float b,h,dobro,area;
+    float gh,ht,total;
 
     printf("Digite o quanto você ganha por hora: ");
     scanf("%f", &gh);
 
-    printf("Digite quantas horas trabalhadas: ");
+    printf("Digite quantas horas trabalhadas no mês: ");
     scanf("%f", &ht);
 
-    area = b*h;
-    dobro = area*2;
+    total = (gh*ht);
 
-    printf("A área do quadrado é %f com o valor em dobro de %f", area,dobro);
+    printf("O total do sálario em um mês de trabalho é %f",total);
 }

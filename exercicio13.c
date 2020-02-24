@@ -6,12 +6,14 @@ int main()
     setlocale (LC_ALL, "");
     setlocale (LC_CTYPE, "pt_BR.UTF-8");
 
-    float me,cm;
+    float me,l;
 
-    printf("Digite os metros: ");
+    printf("Digite o tamanho em metros quadrados da area a ser pintada: ");
     scanf("%f", &me);
 
-    cm = me*100;
 
-    printf("O valor em centimetros são: %f", cm);
+
+
+
+    printf("Quantidade de latas  %f\n", liquido);
 }

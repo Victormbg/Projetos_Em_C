@@ -3,8 +3,8 @@
 
 int main()
 {
-    setlocale (LC_ALL, ""); // importa as variáveis de ambiente
-    setlocale (LC_CTYPE, "pt_BR.UTF-8"); // por via das dúvidas
+    setlocale (LC_ALL, "");
+    setlocale (LC_CTYPE, "pt_BR.UTF-8");
 
     float n1,n2,n3,media;
 

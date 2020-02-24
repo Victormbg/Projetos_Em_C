@@ -3,8 +3,8 @@
 
 int main()
 {
-    setlocale (LC_ALL, ""); // importa as variáveis de ambiente
-    setlocale (LC_CTYPE, "pt_BR.UTF-8"); // por via das dúvidas
+    setlocale (LC_ALL, "");
+    setlocale (LC_CTYPE, "pt_BR.UTF-8");
     int num1,num2,soma;
     printf("Digite o primeiro número: ");
     scanf("%d", &num1);
