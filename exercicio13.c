@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <locale.h>
+#include <math.h>
 
 int main(){
 	setlocale (LC_ALL, "");
@@ -9,6 +10,6 @@ int main(){
 	scanf("%f",&me);
 	li = me/3;
 	la = li/18;
-	total = la*180;
-	printf("Você deve comprar %f latas, com preço total de : %0.00f",la,total);	
+	total = ceil(la)*180;
+	printf("Você deve comprar %0.00f latas, com preço total de : %0.00f",ceil(la),total);	
 }
