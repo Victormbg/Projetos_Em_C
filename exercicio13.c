@@ -1,19 +1,14 @@
 #include <stdio.h>
 #include <locale.h>
 
-int main()
-{
-    setlocale (LC_ALL, "");
+int main(){
+	setlocale (LC_ALL, "");
     setlocale (LC_CTYPE, "pt_BR.UTF-8");
-
-    float me,l;
-
-    printf("Digite o tamanho em metros quadrados da area a ser pintada: ");
-    scanf("%f", &me);
-
-
-
-
-
-    printf("Quantidade de latas  %f\n", liquido);
+	float me,li,la,total;
+	printf("Digite os metros quadradao a serem pintados: ");
+	scanf("%f",&me);
+	li = me/3;
+	la = li/18;
+	total = la*180;
+	printf("Você deve comprar %f latas, com preço total de : %0.00f",la,total);	
 }
