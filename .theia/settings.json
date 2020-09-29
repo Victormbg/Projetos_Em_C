@@ -9,5 +9,6 @@
             "directory": ""
         }
     ],
-    "C_Cpp.autoAddFileAssociations": true
+    "C_Cpp.autoAddFileAssociations": true,
+    "C_Cpp.errorSquiggles": "Disabled"
 }
