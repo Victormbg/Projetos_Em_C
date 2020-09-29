@@ -12,7 +12,7 @@ float Calcular()
         system("cls");
         printf("Calculadora para raizes da equacao do segundo grau:\n");
         printf("\n\tA*x^2 + B*x + C = 0 \t\n");
-        printf("\nEntre com o valor de a:\n");
+        printf("\nEntre com o valor de A:\n");
         scanf("%f", &a);
         printf("Entre com o valor de B:\n");
         scanf("%f", &b);
@@ -20,17 +20,21 @@ float Calcular()
         scanf("%f", &c);
         while (a == 0)
         {
-            printf("ERRO! Entre com o valor diferente de zero:\n");
+            printf("ERRO! Entre com o valor de A diferente de zero:\n");
             scanf("%f", &a);
         }
         d = ((b * b) - 4 * (a * c));
         printf("\nO Delta dessa equacao foi: %.2f\n", d);
         if (d == 0)
-            printf("As raizes real de X = %.2f", (-b / 2 * a));
+        {
+            printf("Existe uma raiz real dada por:\nX = %.2f", (-b / 2 * a));
+        }
         else
         {
             if (d > 0)
-                printf("As raizes sao:\nX1 = %.2f\nX2 = %.2f\n", ((-b / 2 * a) + sqrt(d) / (2 * a)), ((-b / 2 * a) - sqrt(d) / (2 * a)));
+            {
+                printf("Existe duas raizes reais dadas por:\nX1 = %.2f\nX2 = %.2f\n", ((-b + sqrt(d)) / (2 * a)), ((-b - sqrt(d)) / (2 * a)));
+            }
             else if (d < 0)
             {
                 printf("Nao existe raiz real.");
