@@ -5,52 +5,6 @@
 #include <unistd.h>
 #include <math.h>
 
-float subtrair()
-{
-    float n1 = 0, n2 = 0, res = 0;
-    system("cls");
-    printf("Digite o primeiro numero: ");
-    scanf("%f", &n1);
-    printf("Digite o segundo numero: ");
-    scanf("%f", &n2);
-    res = (n1 - n2);
-    printf("O resultado da subtracao foi %.1f\n\n", res);
-    getchar();
-    printf("PRESSIONE ENTER PARA VOLTAR...");
-    getchar();
-    system("cls");
-}
-
-int restoDivisao()
-{
-    int n1 = 0, n2 = 0, res = 0;
-    system("cls");
-    printf("Digite o primeiro numero: ");
-    scanf("%f", &n1);
-    printf("Digite o segundo numero: ");
-    scanf("%f", &n2);
-    res = (n1 % n2);
-    printf("O resultado do resto da divisao foi %d\n\n", res);
-    getchar();
-    printf("PRESSIONE ENTER PARA VOLTAR...");
-    getchar();
-    system("cls");
-}
-
-float raizQuadrada()
-{
-    float num = 0, res = 0;
-    system("cls");
-    printf("Digite um numero: ");
-    scanf("%f", &num);
-    res = (int)sqrt(num);
-    printf("O resultado da raiz quadrada foi %.1f\n\n", res);
-    getchar();
-    printf("PRESSIONE ENTER PARA VOLTAR...");
-    getchar();
-    system("cls");
-}
-
 void sair()
 {
     system("cls");
@@ -71,10 +25,58 @@ void sair()
     }
 }
 
+int subtrair()
+{
+    int n1 = 0, n2 = 0, res = 0;
+    system("cls");
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &n1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &n2);
+    res = (n1 - n2);
+    printf("O resultado da subtracao foi %d\n\n", res);
+    getchar();
+    printf("PRESSIONE ENTER...");
+    getchar();
+    system("cls");
+    sair();
+}
+
+int restoDivisao()
+{
+    int n1 = 0, n2 = 0, res = 0;
+    system("cls");
+    printf("Digite o primeiro numero: ");
+    scanf("%d", &n1);
+    printf("Digite o segundo numero: ");
+    scanf("%d", &n2);
+    res = n1 % n2;
+    printf("O resultado do resto da divisao foi %d\n\n", res);
+    getchar();
+    printf("PRESSIONE ENTER...");
+    getchar();
+    system("cls");
+    sair();
+}
+
+int raizQuadrada()
+{
+    int num = 0, res = 0;
+    system("cls");
+    printf("Digite um numero: ");
+    scanf("%d", &num);
+    res = sqrt(num);
+    printf("O resultado da raiz quadrada foi %d\n\n", res);
+    getchar();
+    printf("PRESSIONE ENTER...");
+    getchar();
+    system("cls");
+    sair();
+}
+
 int main()
 {
     system("cls");
-    float num1 = 0, num2 = 0;
     int op = 1;
     do
     {
@@ -82,7 +84,7 @@ int main()
         printf("1 - Subtrair \n");
         printf("2 - Resto da divisao inteira \n");
         printf("3 - Raiz quadrada\n");
-        printf("4 - Sair do programa\n");
+        printf("4 - Sair da calculadora\n");
         printf("Entre com a opcao desejada: ");
         scanf("%d", &op);
         switch (op)

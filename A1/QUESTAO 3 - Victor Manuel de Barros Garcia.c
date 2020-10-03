@@ -7,6 +7,7 @@ int i, j, mat1[tam][tam], mat2[tam][tam], mat3[tam][tam];
 
 int EntrarMatriz()
 {
+    printf("\n============ SOMA DE MATRIZES 3x3 =============\n");
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
@@ -15,7 +16,8 @@ int EntrarMatriz()
             scanf("%d", &mat1[i][j]);
         }
     }
-
+    system("cls");
+    printf("\n==============SOMA DE MATRIZES 3x3==============\n");
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
@@ -24,6 +26,7 @@ int EntrarMatriz()
             scanf("%d", &mat2[i][j]);
         }
     }
+    system("cls");
 }
 
 void Somar(int mat1[][tam], int mat2[][tam])
@@ -38,22 +41,22 @@ void Somar(int mat1[][tam], int mat2[][tam])
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
-            printf("%d  ", mat3[i][j]);
+            printf("%3.d\t", mat3[i][j]);
 
-        printf("\n");
+        printf("\n\n");
     }
 }
 
 int Imprime()
 {
-    printf("Matriz 1:\n\n");
+    printf("\nMatriz A:\n\n");
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
             printf("%3.d\t", mat1[i][j]);
         printf("\n\n");
     }
-    printf("Matriz 2:\n\n");
+    printf("Matriz B:\n\n");
     for (i = 0; i < 3; i++)
     {
         for (j = 0; j < 3; j++)
@@ -64,10 +67,9 @@ int Imprime()
 
 int main()
 {
-
-    printf("\n==============MATRIZ 3x3==============\n");
+    system("cls");
     EntrarMatriz();
     Imprime();
-    printf("A soma das matrizes: \n\n");
+    printf("A soma das matrizes A e B: \n\n");
     Somar(mat1, mat2);
 }

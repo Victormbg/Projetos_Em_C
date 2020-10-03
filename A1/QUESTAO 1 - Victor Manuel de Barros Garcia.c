@@ -40,7 +40,7 @@ float Calcular()
                 printf("Nao existe raiz real.");
             }
         }
-        printf("\n\nDeseja fazer outro calculo? (S)/(N):");
+        printf("\n\nDeseja fazer outro calculo? (S)/(N):\n");
         scanf("%s", &op);
     } while (op == 's' || op == 'S');
 }
